@@ -3,21 +3,348 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Poker Snap Tracker</title>
-  <meta name="description" content="Registra tus manos de póker en vivo en segundos y revísalas después.">
+  <title>Poker Snap Tracker — Registra tus manos de póker en vivo en segundos</title>
+  <meta name="description" content="Diario de manos para póker en vivo (cash No-Limit Hold'em). Anota una mano en segundos en la mesa, reconstrúyela calle por calle después y lleva tus sesiones y tu bankroll. Sin cuenta y sin internet.">
+  <meta name="theme-color" content="#050d0f">
   <link rel="icon" href="/icon.png">
+  <link rel="apple-touch-icon" href="/icon.png">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://pokersnaptracker.com/">
+  <meta property="og:title" content="Poker Snap Tracker — Anota la mano. Sigue jugando.">
+  <meta property="og:description" content="Registra tus manos de póker en vivo en segundos y revísalas después. Sin cuenta, sin internet, tus datos en tu teléfono.">
+  <meta property="og:image" content="https://pokersnaptracker.com/img/og.jpg">
+  <meta name="twitter:card" content="summary_large_image">
   <link rel="stylesheet" href="/style.css">
 </head>
 <body>
-<main>
-  <header><img src="/icon.png" alt=""><a href="/">Poker Snap Tracker</a></header>
-  <h1>Registra tus manos de póker en vivo en segundos.</h1>
-  <p>Poker Snap Tracker es un diario de manos para jugadores de cash games No-Limit Hold'em en vivo. Anota lo importante con unos pocos toques cuando las reglas de la sala te permitan usar el teléfono, y reconstruye la mano con calma después.</p>
-  <div class="card">
-    <p><strong>Tus datos, en tu teléfono.</strong> Sin cuenta, sin servidores, sin publicidad. Funciona sin internet.</p>
+
+<nav class="nav">
+  <div class="wrap">
+    <a class="brand" href="/"><img src="/icon.png" alt="">Poker Snap Tracker</a>
+    <div class="nav-links">
+      <a href="#como-funciona">Cómo funciona</a>
+      <a href="#funciones">Funciones</a>
+      <a href="#capturas">Capturas</a>
+      <a href="#privacidad">Privacidad</a>
+      <a href="#preguntas">Preguntas</a>
+    </div>
+    <a class="btn btn-primary" href="#avisame">Avísame</a>
   </div>
-  <p class="muted">Es una herramienta de registro y estudio: no permite jugar ni apostar y no da consejos durante una mano en curso.</p>
-  <p><a href="/privacidad/">Política de privacidad</a> · <a href="/privacy/">Privacy policy</a> · <a href="mailto:contacto@pokersnaptracker.com">contacto@pokersnaptracker.com</a></p>
-</main>
+</nav>
+
+<header class="hero">
+  <div class="hero-photo" style="background-image:url('/img/photo-table.webp')"></div>
+  <div class="wrap">
+    <div>
+      <span class="eyebrow">♠ Póker en vivo · Cash NLHE</span>
+      <h1>Anota la mano.<br><span class="hl">Sigue jugando.</span></h1>
+      <p class="lead">Poker Snap Tracker es el diario de manos para el jugador de mesa real. Guarda lo importante de una mano en unos pocos toques, sin perderte la siguiente, y reconstrúyela con calma al terminar la sesión.</p>
+      <div class="cta-row">
+        <a class="btn btn-primary" href="#avisame">Quiero probarla</a>
+        <a class="btn btn-ghost" href="#como-funciona">Ver cómo funciona</a>
+      </div>
+      <p class="cta-note">Próximamente en Google Play · Android primero, iPhone después</p>
+    </div>
+    <div class="hero-visual">
+      <img class="art" src="/img/hero-art.webp" alt="Una mano con dos ases que pasan a la pantalla de un teléfono, que confirma la mano guardada" width="1000" height="841">
+      <div class="phone"><img src="/img/snap-top.webp" alt="Pantalla de registro rápido con A♠ K♥ en el botón" loading="eager"></div>
+    </div>
+  </div>
+</header>
+
+<div class="facts">
+  <div class="wrap">
+    <div class="fact"><b>4 toques</b><span>para anotar tus cartas: A · ♠ · K · ♥</span></div>
+    <div class="fact"><b>0 cuentas</b><span>Ni registro ni contraseña. Abres y anotas.</span></div>
+    <div class="fact"><b>Sin internet</b><span>Funciona en modo avión, en cualquier sala.</span></div>
+    <div class="fact"><b>11 monedas</b><span>USD, EUR, PEN, MXN, COP, VES y más.</span></div>
+  </div>
+</div>
+
+<section class="problem">
+  <div class="wrap">
+    <div class="problem-photo" style="background-image:url('/img/photo-phone.webp');background-position:center 25%" role="img" aria-label="Jugador en una mesa de póker"></div>
+    <div>
+      <span class="tag">El problema</span>
+      <h2>A las tres horas ya no te acuerdas de la mano que importaba.</h2>
+      <p class="muted" style="font-size:18px">En la mesa no hay tiempo para llenar un formulario. Si anotar una mano toma un minuto, te pierdes la siguiente, o directamente dejas de anotar. Al final de la sesión solo queda una sensación: «hubo una mano rara en el turn…».</p>
+      <p class="quote">«¿Pagué bien ese river? ¿Cuánto había en el bote? ¿Él estaba en UTG o en UTG+1?»</p>
+      <ul class="checklist">
+        <li><b>Captura en segundos</b>: solo lo que recordarías mal más tarde.</li>
+        <li><b>Nada obligatorio</b>: una nota, unas cartas o una etiqueta ya bastan.</li>
+        <li><b>El resto, después</b>: reconstruyes la mano en casa, calle por calle.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="como-funciona" class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="tag">Cómo funciona</span>
+      <h2>Tres pasos. Dos en la mesa, uno en casa.</h2>
+      <p>Pensada para usarse con una mano, en pocos segundos y sin mirar demasiado la pantalla.</p>
+    </div>
+    <div class="steps">
+      <div class="step">
+        <div class="phone"><img src="/img/picker.webp" alt="Selector de cartas con rangos y palos" loading="lazy"></div>
+        <span class="step-num">1</span>
+        <h3>Toca tus cartas</h3>
+        <p>Rango y palo, o solo «AKo» si no recuerdas los palos. Posición, la acción que quieres recordar y una etiqueta como «Duda».</p>
+      </div>
+      <div class="step">
+        <div class="phone"><img src="/img/saved.webp" alt="Aviso de mano guardada en la pantalla de inicio" loading="lazy"></div>
+        <span class="step-num">2</span>
+        <h3>Guarda y sigue jugando</h3>
+        <p>Se guarda al instante en tu teléfono. Si te interrumpen a mitad, queda como borrador y la retomas cuando quieras.</p>
+      </div>
+      <div class="step">
+        <div class="phone"><img src="/img/editor-1.webp" alt="Editor guiado que reconstruye la mano calle por calle" loading="lazy"></div>
+        <span class="step-num">3</span>
+        <h3>Reconstrúyela después</h3>
+        <p>El editor guiado te propone quién actúa y solo te muestra acciones posibles. Calcula el bote por ti.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="funciones">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="tag">Funciones</span>
+      <h2>Todo lo que necesitas para estudiar tu juego en vivo.</h2>
+      <p>Y nada que te distraiga en la mesa.</p>
+    </div>
+
+    <div class="feature">
+      <div class="feature-media">
+        <div class="phone"><img src="/img/snap-top.webp" alt="Registro rápido: cartas, posición y acción" loading="lazy"></div>
+        <div class="phone small"><img src="/img/snap-bottom.webp" alt="Registro rápido: etiquetas y nota" loading="lazy"></div>
+      </div>
+      <div>
+        <span class="tag">Modo SNAP</span>
+        <h3>Registra solo lo que importa, en el momento.</h3>
+        <p>Una pantalla, sin menús. Toca las cartas, la posición y la calle y acción que quieres recordar, añade una etiqueta (Bluff, Hero call, Bote grande, Duda, Bad beat, Cooler o las tuyas) y, si quieres, una nota.</p>
+        <ul class="checklist">
+          <li><b>Cartas con o sin palo</b>: «A♠K♥» o simplemente «AKo».</li>
+          <li><b>Nada es obligatorio</b>: puedes guardar solo una nota.</li>
+          <li><b>Borrador automático</b>: si cierras la app o entra una llamada, no pierdes nada.</li>
+          <li><b>Asociada a tu sesión</b>: la mano queda en la sesión activa con sus ciegas y moneda.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature reverse">
+      <div class="feature-media">
+        <div class="phone"><img src="/img/editor-1.webp" alt="Editor guiado con preflop y flop" loading="lazy"></div>
+        <div class="phone small"><img src="/img/bet-sheet.webp" alt="Tamaños rápidos de apuesta por fracción del bote" loading="lazy"></div>
+      </div>
+      <div>
+        <span class="tag">Modo Completar</span>
+        <h3>Reconstruye la mano calle por calle, sin errores de reglas.</h3>
+        <p>El editor conoce las reglas del No-Limit Hold'em: sabe a quién le toca, cuánto hay que pagar y qué acciones son posibles. Tú solo eliges.</p>
+        <ul class="checklist">
+          <li><b>Tamaños rápidos</b>: 2,5 BB, 3 BB… o ⅓, ½ y ⅔ del bote.</li>
+          <li><b>«El resto foldea»</b>: un toque en vez de cinco.</li>
+          <li><b>Bote exacto</b>, o «no calculable» si falta un dato. Nunca inventa.</li>
+          <li><b>Board sin repetidas</b>: no te deja poner una carta que ya está en juego.</li>
+          <li>Straddle, heads-up, opción de la ciega grande y all-in corto.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-media">
+        <div class="phone"><img src="/img/detail-2.webp" alt="Detalle de una mano reconstruida con bote y notas de revisión" loading="lazy"></div>
+        <div class="phone small"><img src="/img/library.webp" alt="Biblioteca de manos con búsqueda y filtros" loading="lazy"></div>
+      </div>
+      <div>
+        <span class="tag">Revisión</span>
+        <h3>Tu biblioteca de manos, lista para estudiar.</h3>
+        <p>Cada mano muestra la acción calle por calle, el board, el bote y tus notas de revisión. Márcalas como pendientes, en revisión o revisadas, y encuentra cualquiera en segundos.</p>
+        <ul class="checklist">
+          <li><b>Busca en tus notas</b> y filtra por etiqueta, posición, calle o estado.</li>
+          <li><b>Notas de revisión</b> aparte de la nota que tomaste en la mesa.</li>
+          <li><b>Rápida con miles de manos</b>: probada con 1.000 manos en un teléfono real.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature reverse">
+      <div class="feature-media">
+        <div class="phone"><img src="/img/session.webp" alt="Sesión activa con buy-in y manos asociadas" loading="lazy"></div>
+        <div class="phone small"><img src="/img/bankroll.webp" alt="Bankroll con saldo, sesiones y resultado por hora" loading="lazy"></div>
+      </div>
+      <div>
+        <span class="tag">Sesiones y bankroll</span>
+        <h3>Sabe exactamente cuánto ganas y en cuánto tiempo.</h3>
+        <p>Abre una sesión con tus ciegas y tu buy-in, añade recompras y ciérrala con tu cash-out. La app calcula el resultado en dinero y en ciegas grandes, y lo suma a tu bankroll.</p>
+        <ul class="checklist">
+          <li><b>Resultado en $ y en BB</b> de cada sesión.</li>
+          <li><b>Por hora</b>, con aviso cuando la muestra aún es corta.</li>
+          <li><b>Depósitos y retiros</b> aparte de las ganancias de mesa.</li>
+          <li><b>Varias monedas</b> sin mezclarlas: cada una con su propio balance.</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="feature">
+      <div class="feature-media single">
+        <div class="phone"><img src="/img/stats.webp" alt="Estadísticas por etiqueta con tamaño de muestra" loading="lazy"></div>
+      </div>
+      <div>
+        <span class="tag">Estadísticas honestas</span>
+        <h3>Números que dicen la verdad, aunque no te guste.</h3>
+        <p>Solo anotas algunas manos, y normalmente las más llamativas. Por eso Poker Snap Tracker no te muestra un VPIP o un PFR que serían engañosos. Te muestra lo que sí se puede saber.</p>
+        <ul class="checklist">
+          <li><b>El tamaño de la muestra (n), siempre visible.</b></li>
+          <li><b>Porcentajes solo con 5 o más manos</b> con resultado.</li>
+          <li>Resultado por etiqueta, dudas por calle y manos por posición.</li>
+          <li>Resultado neto y por hora de tus sesiones cerradas.</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="alt" aria-label="Fotos">
+  <div class="wrap">
+    <div class="photo-band">
+      <div style="background-image:url('/img/photo-room.webp')" role="img" aria-label="Jugadores en una sala de póker en vivo"></div>
+      <div style="background-image:url('/img/photo-cards.webp')" role="img" aria-label="Jugador mirando sus cartas: as y rey"></div>
+      <div style="background-image:url('/img/photo-chips.webp')" role="img" aria-label="Jugadores con cartas y fichas en la mesa"></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="tag">Hecha para la mesa</span>
+      <h2>Discreta, rápida y pensada para el jugador en vivo.</h2>
+    </div>
+    <div class="grid">
+      <div class="card"><div class="ico">🌙</div><h4>Modo oscuro</h4><p>Pantalla oscura que no llama la atención ni te deslumbra en una sala con poca luz.</p></div>
+      <div class="card"><div class="ico">👍</div><h4>Botones grandes</h4><p>Todo se toca con el pulgar, con una sola mano y sin hacer zoom.</p></div>
+      <div class="card"><div class="ico">✈️</div><h4>Sin internet</h4><p>Muchas salas tienen mala señal. La app no la necesita para nada.</p></div>
+      <div class="card"><div class="ico">💾</div><h4>Se guarda al instante</h4><p>«Guardada» aparece solo cuando la mano ya está escrita en tu teléfono.</p></div>
+      <div class="card"><div class="ico">⏸️</div><h4>A prueba de interrupciones</h4><p>Si te llaman a la mesa, la mano queda como borrador hasta que vuelvas.</p></div>
+      <div class="card"><div class="ico">🃏</div><h4>Baraja de 4 colores</h4><p>♠ blanco, <span style="color:var(--red)">♥ rojo</span>, <span style="color:var(--blue)">♦ azul</span> y <span style="color:var(--accent)">♣ verde</span>, para leer el board de un vistazo.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="capturas" class="alt">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="tag">Capturas</span>
+      <h2>Así se ve en tu teléfono.</h2>
+      <p>Capturas reales de la app en un Android.</p>
+    </div>
+  </div>
+  <div class="gallery">
+    <figure><div class="phone"><img src="/img/home.webp" alt="Inicio con sesión activa y últimas manos" loading="lazy"></div><figcaption>Inicio</figcaption></figure>
+    <figure><div class="phone"><img src="/img/snap-top.webp" alt="Registro rápido" loading="lazy"></div><figcaption>Registro rápido</figcaption></figure>
+    <figure><div class="phone"><img src="/img/picker.webp" alt="Selector de cartas" loading="lazy"></div><figcaption>Selector de cartas</figcaption></figure>
+    <figure><div class="phone"><img src="/img/editor-1.webp" alt="Editor guiado" loading="lazy"></div><figcaption>Editor guiado</figcaption></figure>
+    <figure><div class="phone"><img src="/img/board-picker.webp" alt="Selector del board" loading="lazy"></div><figcaption>Board</figcaption></figure>
+    <figure><div class="phone"><img src="/img/detail-1.webp" alt="Detalle de la mano" loading="lazy"></div><figcaption>Detalle de la mano</figcaption></figure>
+    <figure><div class="phone"><img src="/img/library.webp" alt="Biblioteca" loading="lazy"></div><figcaption>Biblioteca</figcaption></figure>
+    <figure><div class="phone"><img src="/img/session.webp" alt="Sesión" loading="lazy"></div><figcaption>Sesión</figcaption></figure>
+    <figure><div class="phone"><img src="/img/bankroll.webp" alt="Bankroll" loading="lazy"></div><figcaption>Bankroll</figcaption></figure>
+    <figure><div class="phone"><img src="/img/stats-2.webp" alt="Estadísticas" loading="lazy"></div><figcaption>Estadísticas</figcaption></figure>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head">
+      <span class="tag">Monedas</span>
+      <h2>Juega donde juegues.</h2>
+      <p>Cada sesión tiene su moneda, y los montos se guardan exactos, sin redondeos raros. Nunca se suman monedas distintas.</p>
+    </div>
+    <div class="chips">
+      <span class="chip">USD<small>Dólar</small></span><span class="chip">EUR<small>Euro</small></span><span class="chip">GBP<small>Libra</small></span>
+      <span class="chip">CAD<small>Dólar canadiense</small></span><span class="chip">MXN<small>Peso mexicano</small></span><span class="chip">PEN<small>Sol</small></span>
+      <span class="chip">COP<small>Peso colombiano</small></span><span class="chip">CLP<small>Peso chileno</small></span><span class="chip">ARS<small>Peso argentino</small></span>
+      <span class="chip">BRL<small>Real</small></span><span class="chip">VES<small>Bolívar</small></span>
+    </div>
+  </div>
+</section>
+
+<section id="privacidad" class="alt">
+  <div class="wrap">
+    <div class="privacy-box">
+      <div>
+        <span class="tag">Privacidad</span>
+        <h2>Tus manos son tuyas. Se quedan en tu teléfono.</h2>
+        <p class="muted" style="font-size:18px">Sin cuenta, sin servidores, sin publicidad y sin rastreadores. La app no envía tus datos a ningún sitio.</p>
+        <a href="/privacidad/">Leer la política de privacidad →</a>
+      </div>
+      <ul class="checklist">
+        <li><b>Respaldo cuando quieras</b>: exporta un archivo JSON y guárdalo donde prefieras.</li>
+        <li><b>Cambia de teléfono</b>: importa el respaldo y recuperas todo. Importar dos veces no duplica nada.</li>
+        <li><b>Hojas de cálculo</b>: exporta tus manos y sesiones en CSV.</li>
+        <li><b>Recordatorio</b> para que no olvides hacer tu respaldo.</li>
+        <li>Pide solo los permisos mínimos: nada de contactos, cámara, micrófono ni ubicación.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="preguntas">
+  <div class="wrap">
+    <div class="section-head">
+      <span class="tag">Preguntas frecuentes</span>
+      <h2>Lo que suelen preguntar.</h2>
+    </div>
+    <div class="faq">
+      <details><summary>¿Puedo usarla en el casino?</summary><p>Depende de las normas de cada sala: muchas permiten usar el teléfono entre manos y otras no lo permiten en la mesa. Úsala solo cuando las reglas de la sala lo permitan. Poker Snap Tracker sirve para registrar y estudiar después: no da consejos ni ayuda durante una mano en curso.</p></details>
+      <details><summary>¿Necesito internet o crear una cuenta?</summary><p>No. La app funciona completa sin conexión y sin registrarte. Abres la app y anotas.</p></details>
+      <details><summary>¿Dónde se guardan mis datos? ¿Y si cambio de teléfono?</summary><p>Solo en tu teléfono. Para no perderlos, exporta un respaldo (archivo JSON) desde Ajustes y guárdalo donde quieras. En el teléfono nuevo lo importas y recuperas todas tus manos, sesiones y movimientos. Si desinstalas la app sin respaldo, los datos se pierden.</p></details>
+      <details><summary>¿Tengo que anotar todas las manos?</summary><p>No, y no es la idea. Anota las que quieras revisar: una duda, un bluff, un bote grande, un bad beat. Puedes guardar una mano solo con una nota y completarla después.</p></details>
+      <details><summary>¿Calcula VPIP, PFR o mi winrate por posición?</summary><p>No. Esas estadísticas necesitan todas las manos que juegas, y en vivo solo anotas algunas, casi siempre las más llamativas. Calcularlas daría números engañosos. La app te muestra resultados por sesión, por hora y conteos sobre tus manos registradas, siempre con el tamaño de la muestra.</p></details>
+      <details><summary>¿Sirve para torneos u otras variantes?</summary><p>La primera versión está hecha para cash games de No-Limit Texas Hold'em en vivo. Torneos y otras variantes podrían llegar más adelante.</p></details>
+      <details><summary>¿Está disponible para iPhone?</summary><p>Primero llegará a Android, en Google Play. La versión para iPhone vendrá después.</p></details>
+      <details><summary>¿Es un juego de apuestas?</summary><p>No. Es una herramienta de registro y estudio. No permite jugar, apostar ni depositar dinero.</p></details>
+    </div>
+  </div>
+</section>
+
+<section id="avisame" class="final">
+  <div class="wrap">
+    <div class="final-box">
+      <img src="/icon.png" alt="">
+      <h2>Muy pronto en Google Play.</h2>
+      <p class="muted" style="font-size:18px;max-width:560px;margin:0 auto 26px">Estamos terminando las pruebas con jugadores reales. Escríbenos y te avisamos cuando esté disponible, o si quieres ser de los primeros en probarla.</p>
+      <a class="btn btn-primary" href="mailto:contacto@pokersnaptracker.com?subject=Quiero%20probar%20Poker%20Snap%20Tracker">Escríbenos</a>
+      <p class="cta-note" style="margin-top:16px"><a href="mailto:contacto@pokersnaptracker.com">contacto@pokersnaptracker.com</a></p>
+    </div>
+  </div>
+</section>
+
+<footer>
+  <div class="wrap">
+    <div>
+      <a class="brand" href="/" style="margin:0 0 10px"><img src="/icon.png" alt="">Poker Snap Tracker</a>
+      <p style="margin:0">El diario de manos para el póker en vivo.</p>
+    </div>
+    <div>
+      <h5>Legal</h5>
+      <a href="/privacidad/">Política de privacidad</a>
+      <a href="/privacy/">Privacy policy (English)</a>
+    </div>
+    <div>
+      <h5>Contacto</h5>
+      <a href="mailto:contacto@pokersnaptracker.com">contacto@pokersnaptracker.com</a>
+    </div>
+  </div>
+  <div class="wrap legal">
+    <p>Poker Snap Tracker es una herramienta de registro y estudio. No es un juego de apuestas, no permite jugar ni apostar dinero y no ofrece asistencia durante una mano en curso. No está afiliada a ninguna sala, casino ni a otras aplicaciones de seguimiento de póker. Juega con responsabilidad; solo para mayores de 18 años.</p>
+    <p>Fotos: Jonathan Borba y Javon Swaby (Pexels), Michał Parzuchowski y Keenan Constance (Unsplash). Capturas de pantalla reales de la app.</p>
+    <p>© 2026 Poker Snap Tracker</p>
+  </div>
+</footer>
+
 </body>
 </html>
